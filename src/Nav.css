@@ -1,0 +1,45 @@
+.Nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.6); /* translucent black */
+    padding: 10px 30px;
+}
+
+.Title{
+    /* color: #dcdcdc; */
+    color: silver;
+    font-weight: 900;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.List{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    list-style: none;
+    color: #dcdcdc;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.List:hover{
+    cursor: pointer;
+}
+
+.List li{
+    opacity: 0.8;
+}
+
+.a{
+    text-decoration: none;
+    color: rgb(248, 241, 241);
+}
+
+.List li:hover{
+    opacity: 1;
+    font-size: 19px;
+}

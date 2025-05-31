@@ -1,0 +1,38 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 30px;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+.grid-item {
+  font-size: 35px;
+  color: #ccc;
+  position: relative;
+  transition: transform 0.3s;
+  margin: 10px;
+  padding: 10px;
+}
+.grid-item:hover {
+  color: #e13dc0;
+  transform: scale(1.2);
+}
+
+.tooltip {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+  border-radius: 4px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.grid-item:hover .tooltip {
+  opacity: 1;
+}

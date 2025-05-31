@@ -1,0 +1,25 @@
+.slider-wrapper {
+  width: 70%;
+  overflow: hidden;
+  margin: 30px auto;
+}
+
+.tech-slider {
+  display: flex;
+  gap: 40px;
+  animation: scroll 15s linear infinite;
+  width: max-content;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.tech-icon {
+  flex-shrink: 0;
+}
